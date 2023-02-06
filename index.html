@@ -12,7 +12,201 @@
 </head>
 <body>
     <header>
-        
+        <video class="video" autoplay muted loop>
+            <source src="public/video/video6.mp4" type="video/mp4" />
+        </video>
+        <section class="nav-container">
+                <p id="logo">
+                    Blog
+                </p>
+                <nav class="topnav">
+                    <div class="burger">
+                        <label for="menu-toggle"> ☰ </label><input type="checkbox" id="menu-toggle">
+                        <ul class="nav">
+                            <li><a href="#HOME">HOME</a></li>
+                            <li> <a href="#LIVESTYLE">LIVESTYLE</a></li>
+                            <li><a href="#FOOD">FOOD</a></li>
+                            <li><a href="#NATURE">NATURE</a></li>
+                            <li><a href="#PHOTOGRAPHY">PHOTOGRAPHY</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </section>
+        <p class="p1-header">
+            MY BLOG TEMPLATE
+        </p>
+        <p class="p2-header">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eveniet ab, cumque rem adipisci quos eius reiciendis modi nihil. Assumenda quia vero at eius velit commodi? Deserunt obcaecati ea accusantium.
+            voluptatibus quia exercitationem. Dolore veritatis harum delectus fugit, quisquam vitae asperiores aspernatur eveniet officia perferendis sunt
+        </p>
+        <button class="btn-header" type="button" ><a href="#">Go to blog</a></button>
     </header>
+    <main>
+        <div class="article-flex">
+            <div class="video1">
+                <video width="530" height="300" style="border-radius: 10px;" controls>
+                    <source src="/public/video/video10.mp4" type="video/mp4">
+                  </video>
+            </div>
+            <div class="article-text">
+                <p class="p-main">
+                    Main article
+                </p>
+                <p class="p1-main">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima animi suscipit nihil delectus, sed tempora autem odit itaque velit ad molestiae labore magni sequi commodi rem nisi corrupti provident maiores?
+                   Aliquam laboriosam ipsum ad? Ipsa rem nemo suscipit assumenda quis repellendus ab minima, atque quidem blanditiis, recusandae tenetur adipisci. Obcaecati accusamus veritatis illo sint hic iure magnam culpa doloremque odio.
+                  
+                </p>
+                <p class="p1-main">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi rem sint laudantium veniam cum recusandae omnis quasi quod commodi, magni quidem, blanditiis obcaecati quo ratione? Obcaecati error est eum aliquid.
+                   Doloribus voluptatibus quasi commodi nulla odit accusamus reiciendis suscipit debitis beatae modi quos iste ipsa natus, vitae quisquam tenetur veniam ratione. Illum nisi hic ad eum, eius at earum eos!
+                </p>
+                <p class="p1-main">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facere adipisci magnam praesentium quia officiis atque commodi corrupti dolor totam nostrum repellat voluptatem, pariatur qui! Ullam iste omnis nostrum perferendis.
+                </p>
+            </div>
+        </div>
+        <div class="box1-content">
+            <p class="p-blog">Blog</p>
+            <nav id="allimg">
+                <ul><a class="ALL" href="">ALL</a></ul>
+                <ul><a class="LIVESTYLE" href="">LIVESTYLE</a></ul>
+                <ul><a class="FOOD" href="">FOOD</a></ul>
+                <ul><a class="NATURE" href="">NATURE</a></ul>
+                <ul><a class="PHOTOGRAPHY" href="">PHOTOGRAPHY</a></ul>
+            </nav>
+            <div id="content" >
+                <!--onclick="window.open(this.src)  onclick="swipe(this)"-->
+                <div class="card">
+                    <div class="ALL PHOTOGRAPHY card-header"  >
+                        <img id="myImg" class="img-box"  src="/public/image/blog1.jpg.png" alt="gallery-1" onmouseover="colorgray(this)">
+                        <p class="p-card">PHOTOGRAPHY</p>
+                        <p class="info-text"> China Trip</p>
+                        <div class="article-info">
+                            <ul class="ul-user"><i class="fa-regular fa-user"></i>BY WALID</ul>
+                            <ul class="ul-calendar"><i class="fa-regular fa-calendar"></i>February 6st, 2023</ul>
+                            <ul class="ul-heart"><i class="fa-regular fa-heart"></i>123</ul>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p class="loream-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus mollitia qui suscipit iusto. Deserunt maiores modi architecto fugit error quae illum soluta natus quod temporibus alias, labore eum neque?</p>
+                        <a class="read-more" href="#"> Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="ALL FOOD card-header"  >
+                        <img id="myImg" class="img-box img-box1"  src="/public/image/blog2.jpg.png" alt="event1" onmouseover="colorgray1(this)">
+                        <p class="p1-card"></p>
+                        <p class="info-text"></p>
+                        <div class="article-info">
+                            <ul class="ul-user"><i class="fa-regular fa-user"></i>BY WALID</ul>
+                            <ul class="ul-calendar"><i class="fa-regular fa-calendar"></i>February 6st, 2023</ul>
+                            <ul class="ul-heart"><i class="fa-regular fa-heart"></i>123</ul>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p class="loream-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, corrupti vitae, ea vero temporibus harum distinctio doloremque, sapiente quam maxime eaque exercitationem fugit quas similique cum eos voluptatibus alias quis.</p>
+                        <a class="read-more" href="#"> Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="ALL NATURE card-header"  >
+                        <img id="myImg" class="img-box img-box2"  src="/public/image/blog3.jpg.png" alt="gallery-3" onmouseover="colorgray2(this)">
+                        <p class="p2-card"></p>
+                        <p class="info-text"></p>
+                        <div class="article-info">
+                            <ul class="ul-user"><i class="fa-regular fa-user"></i>BY WALID</ul>
+                            <ul class="ul-calendar"><i class="fa-regular fa-calendar"></i>February 6st, 2023</ul>
+                            <ul class="ul-heart"><i class="fa-regular fa-heart">123</i></ul>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p class="loream-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus architecto excepturi corporis nihil optio vel? Ipsum, vel modi in debitis earum ducimus vitae incidunt impedit accusantium rem nesciunt expedita? Atque!</p>
+                        <a class="read-more" href="#"> Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="ALL LIVESTYLE card-header"  >
+                        <img id="myImg" class="img-box img-box3"  src="/public/image/blog4.jpg.png" alt="gallery-4" onmouseover="colorgray3(this)">
+                        <p class="p3-card"></p>
+                        <p class="info-text"></p>
+                        <div class="article-info">
+                            <ul class="ul-user"><i class="fa-regular fa-user"></i>BY WALID</ul>
+                            <ul class="ul-calendar"><i class="fa-regular fa-calendar"></i>February 6st, 2023</ul>
+                            <ul class="ul-heart"><i class="fa-regular fa-heart"></i>123</ul>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p class="loream-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum impedit minima cumque fugit sit dolorem fugiat quidem, eum tempora consectetur odit nemo veniam. Veritatis, vitae? Minima libero voluptatem quasi fugiat?</p>
+                        <a class="read-more" href="#"> Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="ALL NATURE card-header"  >
+                        <img id="myImg" class="img-box img-box4"  src="/public/image/blog5.jpg.png" alt="gallery-5" onmouseover="colorgray4(this)">
+                        <p class="p4-card"></p>
+                        <p class="info-text"></p>
+                        <div class="article-info">
+                            <ul class="ul-user"><i class="fa-regular fa-user"></i>BY WALID</ul>
+                            <ul class="ul-calendar"><i class="fa-regular fa-calendar"></i>February 6st, 2023</ul>
+                            <ul class="ul-heart"><i class="fa-regular fa-heart"></i>123</ul>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p class="loream-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos totam illum qui minus dolores eveniet corrupti sapiente modi nam impedit, doloribus labore delectus blanditiis eos quod iure similique reiciendis illo!</p>
+                        <a class="read-more" href="#"> Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="ALL FOOD card-header"  >
+                        <img id="myImg" class="img-box img-box5"  src="/public/image/blog6.jpg.png" alt="gallery-7" onmouseover="colorgray5(this)">
+                        <p class="p6-card"></p>
+                        <p class="info-text"></p>
+                        <div class="article-info">
+                            <ul class="ul-user"><i class="fa-regular fa-user"></i>BY WALID</ul>
+                            <ul class="ul-calendar"><i class="fa-regular fa-calendar"></i>February 6st, 2023</ul>
+                            <ul class="ul-heart"><i class="fa-regular fa-heart"></i>123</ul>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p class="loream-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatum provident voluptates officiis, nulla error itaque, laborum necessitatibus rem amet dolorum? Ut cupiditate dicta rerum necessitatibus! Asperiores ipsa saepe quod.</p>
+                        <a class="read-more" href="#"> Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="ALL PHOTOGRAPHY card-header"  >
+                        <img id="myImg" class="img-box img-box6"  src="/public/image/blog7.jpg.png" alt="gallery-8" onmouseover="colorgray6(this)">
+                        <p class="p7-card"></p>
+                        <p class="info-text"></p>
+                        <div class="article-info">
+                            <ul class="ul-user"><i class="fa-regular fa-user"></i>BY WALID</ul>
+                            <ul class="ul-calendar"><i class="fa-regular fa-calendar"></i>February 6st, 2023</ul>
+                            <ul class="ul-heart"><i class="fa-regular fa-heart"></i>123</ul>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p class="loream-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore eaque assumenda eveniet ex delectus tempora. Quidem voluptates deleniti consequatur voluptatum temporibus nihil iusto! Eum suscipit vel laboriosam modi autem.</p>
+                        <a class="read-more" href="#"> Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="ALL NATURE card-header"  >
+                        <img id="myImg" class="img-box img-box7"  src="/public/image/blog8.jpg.png" alt="gallery-9" onmouseover="colorgray7(this)">
+                        <p class="p8-card"></p>
+                        <p class="info-text"></p>
+                        <div class="article-info">
+                            <ul class="ul-user"><i class="fa-regular fa-user"></i>BY WALID</ul>
+                            <ul class="ul-calendar"><i class="fa-regular fa-calendar"></i>February 6st, 2023</ul>
+                            <ul class="ul-heart"><i class="fa-regular fa-heart"></i>123</ul>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p class="loream-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ipsam odio ad illo ex facilis, nemo ducimus error eveniet labore veritatis, ipsum, provident repudiandae quod cum soluta nam iusto quam.</p>
+                        <a class="read-more" href="#"> Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="public/js/script.js"></script>
 </body>
 </html>
