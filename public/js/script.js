@@ -66,12 +66,6 @@ function colorgray7(x) {
 
 let PHOTOGRAPHY = document.querySelector(".PHOTOGRAPHY")
 
-let nb =0
-for (let i = 0; i < PHOTOGRAPHY.length; i++) {
-  nb++;
-  i++;
-  
-}
 PHOTOGRAPHY.addEventListener("click", function(event){
         event.preventDefault()
         let images = document.querySelectorAll("#content div")
