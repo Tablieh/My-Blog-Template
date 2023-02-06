@@ -140,10 +140,10 @@ span#burger.fas.fa-bars.fa-2x.mobile{
     padding-left: 15px;
     padding-right: 15px;
     font-family: 'Open Sans';
-    color: #404040;
+    color: #ffffff;
 }
 #allimg a:hover{
-    color:rgba(184, 37, 69, 0.753);
+    color:rgba(191, 196, 201, 0.753);
 }
 .img-box{
     filter: grayscale(1);
@@ -152,7 +152,7 @@ span#burger.fas.fa-bars.fa-2x.mobile{
     height: 250px;
 }
 .img-box{
-    cursor: zoom-in;
+    cursor: pointer;
 }
 
 .img-gallry{
@@ -331,4 +331,39 @@ span#burger.fas.fa-bars.fa-2x.mobile{
     font-size: 12px;
     padding: 5px;
     border-radius: 5px;
+}
+.ALL-color{
+    background-color: #292929;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+.LIVESTYLE-color{
+    background-color: rgba(184, 37, 69, 0.753);
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+.FOOD-color{
+    background-color: #126c84;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+.NATURE-color{
+    background-color: #1fa345;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+.PHOTOGRAPHY-color{
+    background-color: #404040;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
 }
