@@ -63,68 +63,138 @@ function colorgray7(x) {
     grayImage7.style.filter= "grayscale(1)";
     }, 700);
 }
+/*
+ce code a changer par tout les filter en semble catagories en mettent 1 seul fonction -> img mika 
 
-let PHOTOGRAPHY = document.querySelector(".PHOTOGRAPHY")
+let photography = document.querySelector(".photography")
+let article = document.querySelector(".article-info")
 
-PHOTOGRAPHY.addEventListener("click", function(event){
+photography.addEventListener("click", function(event){
         event.preventDefault()
-        let images = document.querySelectorAll("#content div")
+        let images = document.querySelectorAll("#content .card div")
         for (const image of images) {
-            if(!image.classList.contains("PHOTOGRAPHY")){
+            if(!image.classList.contains("photography")){
                image.style.display="none"
             }
              else{
-                image.style.display="block"
+                image.style.display="flex"
             }
         }
 })
-let NATURE = document.querySelector(".NATURE")
 
-NATURE.addEventListener("click", function(event){
+
+let nature = document.querySelector(".nature")
+
+nature.addEventListener("click", function(event){
         event.preventDefault()
-        let images = document.querySelectorAll("#content div")
+        let images = document.querySelectorAll("#content .card div")
         for (const image of images) {
-            if(!image.classList.contains("NATURE")){
+            if(!image.classList.contains("nature")){
                image.style.display="none"
             }
              else{
-                image.style.display="block"
+                image.style.display="flex"
             }
         }
 })
-let FOOD = document.querySelector(".FOOD")
+
+
+let food = document.querySelector(".food")
 let box = document.querySelector(".box-content")
-FOOD.addEventListener("click", function(event){
+food.addEventListener("click", function(event){
     event.preventDefault()
-    let images = document.querySelectorAll("#content div")
+    let images = document.querySelectorAll("#content .card div")
     for (const image of images) {
-        if(!image.classList.contains("FOOD")){
+        if(!image.classList.contains("food")){
            image.style.display="none"
         }
         else{
-            image.style.display="block"
+            image.style.display="flex"
         }
     }
 })
-let LIVESTYLE = document.querySelector(".LIVESTYLE")
 
-  LIVESTYLE.addEventListener("click", function(event){
+
+let livestyle = document.querySelector(".livestyle")
+
+livestyle.addEventListener("click", function(event){
         event.preventDefault()
-        let images = document.querySelectorAll("#content div")
+        let images = document.querySelectorAll("#content .card div")
         for (const image of images) {
-            if(!image.classList.contains("LIVESTYLE")){
+            if(!image.classList.contains("livestyle")){
                image.style.display="none"
             }
              else{
-                image.style.display="block"
+                image.style.display="flex"
             }
         }
 })
+
+
 let ALL = document.querySelector(".ALL")
 ALL.addEventListener("click", function(event){
     event.preventDefault()
-    let images = document.querySelectorAll("#content div")
+    let images = document.querySelectorAll("#content .card div")
     for (const image of images) {
-        image.style.display="block"
+        image.style.display="flex"
     }
 })
+*/
+
+let filters = document.querySelector(".filters")
+const articles = document.querySelectorAll(".card");
+
+filters.addEventListener("click",(e)=>{
+  /* console.log(filters)
+  console.log(articles)
+  console.log(e.target.classList) */
+  e.preventDefault();
+  if(e.target.classList.contains("filter-button")){
+    filters.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
+    const filterValue = e.target.getAttribute("date-filter");
+    articles.forEach((item)=>{
+      if(item.classList.contains(filterValue) || filterValue == 'all'){
+        item.classList.remove("hide");
+        item.classList.add("show");
+      }
+      else{
+        item.classList.remove("show");
+        item.classList.add("hide");
+        console.log(filterValue)
+       /*  console.log(item.classList.contains(filterValue)) */
+      }
+    })
+  }
+})
+window.onscroll = function() {myFunction1()};
+
+var header = document.querySelector(".nav-container");
+var sticky = header.offsetTop;
+function myFunction1() {
+  if (window.pageYOffset > sticky && document.body.scrollTop > 450) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 70) {
+    myBtn.style.opacity = "1";
+  } else {
+    myBtn.style.opacity = "0";
+  }
+};
+function goup(x){
+
+  const myBtn = document.getElementById("myBtn");
+  myBtn.addEventListener("click", function () {
+    //window.scrollTo(0, 0);
+    window.scrollTo(
+      {
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      }
+    );
+  });
+  }

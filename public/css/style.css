@@ -15,9 +15,11 @@ header{
 .nav-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 760px;
     position: absolute;
     top: 10;
+}
+.nav{
+    margin-left: 650px;
 }
 #logo{
     margin-top: 15px;
@@ -152,7 +154,7 @@ span#burger.fas.fa-bars.fa-2x.mobile{
     height: 250px;
 }
 .img-box{
-    cursor: pointer;
+    cursor: zoom-in;
 }
 
 .img-gallry{
@@ -201,17 +203,6 @@ span#burger.fas.fa-bars.fa-2x.mobile{
     font-weight: 400;
     font-family: 'Open Sans';
     color: rgb(255, 255, 255);
-}
-.card-header{
-    position: relative;
-}
-.article-info{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    position: absolute;
-    bottom: 0;
-    left: 20;
 }
 .info-text{
     position: absolute;
@@ -366,4 +357,74 @@ span#burger.fas.fa-bars.fa-2x.mobile{
     padding: 5px;
     border-radius: 5px;
     color: #fff;
+}
+.card-header{
+    position: relative;
+}
+.article-info ,.article-info1,.article-info2,.article-info3,.article-info4,.article-info5,.article-info6,.article-info7{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 20;
+}
+.card.show{
+    animation: fadeIn 1s ease;
+}
+.card.hide{
+    display: none;
+    animation: fadeOut 1s ease;
+}
+@keyframes fadeIn{
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+@keyframes fadeOut{
+    0%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+
+#myBtn{
+    font-size: 15px;
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: rgba(255, 255, 255, 0.753);
+    background: #404040;
+    box-shadow: 0 0 10xp #404040;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+}
+#myBtn:active{
+    background: #404040;
+}
+.sticky {
+    
+    padding: 10px;
+    background-color: #404040;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+}
+.sticky .burger li a {
+    color: #ffffff;
+}
+.sticky .burger li a:hover{
+    color: rgba(213, 194, 198, 0.753);
+}
+footer{
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 15px;
+    background-color: #404040;
+}
+.fa-copyright{
+    font-size: 15px;
 }
