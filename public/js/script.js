@@ -168,11 +168,13 @@ filters.addEventListener("click",(e)=>{
   }
 })
 window.onscroll = function() {myFunction1()};
+let mobile =(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+var header = document.querySelector(".nav");
+var burger = document.querySelector(".burger")
 
-var header = document.querySelector(".nav-container");
 var sticky = header.offsetTop;
 function myFunction1() {
-  if (window.pageYOffset > sticky && document.body.scrollTop > 450) {
+  if (window.pageYOffset > sticky && document.body.scrollTop > 450 /* && !mobile */) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
@@ -183,6 +185,12 @@ function myFunction1() {
   } else {
     myBtn.style.opacity = "0";
   }
+ /*  if (mobile && window.pageYOffset > sticky) {
+    burger.classList.add("sticky-mobile");
+  }
+  else{
+    burger.classList.add("sticky-mobile");
+  } */
 };
 function goup(x){
 
