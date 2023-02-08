@@ -424,7 +424,7 @@ span#burger.fas.fa-bars.fa-2x.mobile{
         margin-left: 0px;
     }
     .burger{
-        height: 670px;  opacity: 1;
+        height: 670px;  opacity: 5;
         background-color: #020202;
     }
     #logo{
@@ -458,7 +458,7 @@ span#burger.fas.fa-bars.fa-2x.mobile{
     .box1-content{
         padding-top: 350px;
     }
-    /* .sticky-mobile{
+    /*  .sticky-mobile{
         background-color: #020202;
         position: fixed;
         top: 0;
@@ -471,12 +471,12 @@ span#burger.fas.fa-bars.fa-2x.mobile{
     .sticky-mobile .burger li a:hover{
         color: rgba(213, 194, 198, 0.753);
     } */
-
+    
     .burger li a:hover {  color: rgb(122, 245, 117);}
     .video{ width: 730px; }
-    .p1-header{ left: 60px; top: 90px; right: 0; font-size: 25px;opacity: 0.7;}
-    .p2-header{ top: 140px; left: 55px; right: 0; font-size: 11px; width: 250px; opacity: 0.7;}
-    .btn-header{  left: 110px; top: 290px;  right: 0; opacity: 0.7;}
+    .p1-header{ left: 60px; top: 90px; right: 0; font-size: 25px;}
+    .p2-header{ top: 140px; left: 55px; right: 0; font-size: 11px; width: 250px;}
+    .btn-header{  left: 110px; top: 290px;  right: 0;}
 }
 @media all and (max-width: 700px) and (min-width: 0px) {
     .burger label { position: absolute; top: 0; display: block; height: 70px; width: 70px; line-height: 70px; text-align: center; color: rgb(255, 255, 255); font-size: 1.8rem;  cursor: pointer; }
