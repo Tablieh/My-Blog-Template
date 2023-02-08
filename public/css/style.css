@@ -456,7 +456,17 @@ span#burger.fas.fa-bars.fa-2x.mobile{
         height: 150px;
     }
     .box1-content{
-        padding-top: 350px;
+        padding-top: 450px;
+    }
+    #allimg a{
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    #myBtn{
+       left: 0;
     }
     /*  .sticky-mobile{
         background-color: #020202;
@@ -474,9 +484,9 @@ span#burger.fas.fa-bars.fa-2x.mobile{
     
     .burger li a:hover {  color: rgb(122, 245, 117);}
     .video{ width: 730px; }
-    .p1-header{ left: 60px; top: 90px; right: 0; font-size: 25px;}
-    .p2-header{ top: 140px; left: 55px; right: 0; font-size: 11px; width: 250px;}
-    .btn-header{  left: 110px; top: 290px;  right: 0;}
+    .p1-header{ left: 60px; top: 90px; right: 0; font-size: 25px;opacity: 0.7;}
+    .p2-header{ top: 140px; left: 55px; right: 0; font-size: 11px; width: 250px;opacity: 0.7;}
+    .btn-header{  left: 110px; top: 290px;  right: 0; opacity: 0.7;}
 }
 @media all and (max-width: 700px) and (min-width: 0px) {
     .burger label { position: absolute; top: 0; display: block; height: 70px; width: 70px; line-height: 70px; text-align: center; color: rgb(255, 255, 255); font-size: 1.8rem;  cursor: pointer; }

@@ -234,7 +234,7 @@ function goup(x){
     );
   });
   }
-  function mobile2() {
+  /* function mobile2() {
     var checked = document.getElementById("#menu-toggle:checked");
     var navigatur = document.querySelector(".nav");
     var isVisible = navigatur.style.display == "block";
@@ -261,4 +261,4 @@ function goup(x){
       mobileOp2();
     }
   }
-mobile2()
+mobile2() */
