@@ -63,91 +63,10 @@ function colorgray7(x) {
     grayImage7.style.filter= "grayscale(1)";
     }, 700);
 }
-/*
-ce code a changer par tout les filter en semble catagories en mettent 1 seul fonction -> img mika 
-
-let photography = document.querySelector(".photography")
-let article = document.querySelector(".article-info")
-
-photography.addEventListener("click", function(event){
-        event.preventDefault()
-        let images = document.querySelectorAll("#content .card div")
-        for (const image of images) {
-            if(!image.classList.contains("photography")){
-               image.style.display="none"
-            }
-             else{
-                image.style.display="flex"
-            }
-        }
-})
-
-
-let nature = document.querySelector(".nature")
-
-nature.addEventListener("click", function(event){
-        event.preventDefault()
-        let images = document.querySelectorAll("#content .card div")
-        for (const image of images) {
-            if(!image.classList.contains("nature")){
-               image.style.display="none"
-            }
-             else{
-                image.style.display="flex"
-            }
-        }
-})
-
-
-let food = document.querySelector(".food")
-let box = document.querySelector(".box-content")
-food.addEventListener("click", function(event){
-    event.preventDefault()
-    let images = document.querySelectorAll("#content .card div")
-    for (const image of images) {
-        if(!image.classList.contains("food")){
-           image.style.display="none"
-        }
-        else{
-            image.style.display="flex"
-        }
-    }
-})
-
-
-let livestyle = document.querySelector(".livestyle")
-
-livestyle.addEventListener("click", function(event){
-        event.preventDefault()
-        let images = document.querySelectorAll("#content .card div")
-        for (const image of images) {
-            if(!image.classList.contains("livestyle")){
-               image.style.display="none"
-            }
-             else{
-                image.style.display="flex"
-            }
-        }
-})
-
-
-let ALL = document.querySelector(".ALL")
-ALL.addEventListener("click", function(event){
-    event.preventDefault()
-    let images = document.querySelectorAll("#content .card div")
-    for (const image of images) {
-        image.style.display="flex"
-    }
-})
-*/
-
 let filters = document.querySelector(".filters")
 const articles = document.querySelectorAll(".card");
 
 filters.addEventListener("click",(e)=>{
-  /* console.log(filters)
-  console.log(articles)
-  console.log(e.target.classList) */
   e.preventDefault();
   if(e.target.classList.contains("filter-button")){
     filters.querySelector(".active").classList.remove("active");
@@ -186,7 +105,6 @@ function myFunction1() {
     myBtn.style.opacity = "0";
   }
   if (mobile && window.pageYOffset > sticky) {
-    /* burger.classList.add("sticky-mobile"); */
     burger.style.position = "fixed";
     const newOptions = document.querySelector('.burger ul');
     newOptions.style.textAlign = "start";
@@ -199,25 +117,21 @@ function myFunction1() {
     if ( condition ) {
 
       function mobileOp() {
+        let vid = document.querySelector('.video1 video');
         let allimg = document.querySelectorAll('.img-box');
         allimg.forEach(element => {
-          element.style.opacity = "0";
+          element.style.position = "relative";
+          element.style.zIndex = "-9999";
+          vid.style.zIndex= "-9999";
           setTimeout(() => {
-            element.style.opacity = "1";       
+
             }, 1200);
         });
-        let vid = document.querySelector('.video1 video');
-        vid.style.opacity = "0";
-        
-        setTimeout(() => {
-          vid.style.opacity = "1";       
-          }, 1700);
       }
       mobileOp();
     }
   }
   else{
-    /* burger.classList.add("sticky-mobile"); */
   }
 };
 function goup(x){
@@ -234,31 +148,84 @@ function goup(x){
     );
   });
   }
-  /* function mobile2() {
-    var checked = document.getElementById("#menu-toggle:checked");
-    var navigatur = document.querySelector(".nav");
-    var isVisible = navigatur.style.display == "block";
-    if ( isVisible && checked ) {
+/* function mobile2() {
+    var navigatur = document.querySelector("#menu-toggle:checked + .nav");
+    if (mobile&& navigatur.style.display == "block" ) {
       function mobileOp2() {
         let p1_header = document.querySelector('.p1-header');
         let p2_header = document.querySelector('.p2-header');
         let btn_header = document.querySelector('.btn-header');
-        p1_header.style.opacity = "0";
-        p2_header.style.opacity = "0";
-        btn_header.style.opacity = "0";
+        p1_header.style.zIndex= "-9999";
+        p2_header.style.zIndex= "-9999";
+        btn_header.style.zIndex= "-9999";
+        p1_header.style.opacity = "0.5";
+        p2_header.style.opacity = "0.5";
+        btn_header.style.opacity = "0.5";
         setTimeout(() => {
+          p1_header.style.zIndex= "1";
+          p2_header.style.zIndex= "1";
+          btn_header.style.zIndex= "1";
           p1_header.style.opacity = "1";
           p2_header.style.opacity = "1";
-          btn_header.style.opacity = "1";    
+          btn_header.style.opacity = "1";
           }, 2700);
           let vid = document.querySelector('.video1 video');
-          vid.style.opacity = "0";
-          
+          vid.style.opacity = "0.5";
+          vid.style.zIndex= "-9999";
           setTimeout(() => {
+            vid.style.zIndex= "1";
             vid.style.opacity = "1";       
             }, 2700);
       }
-      mobileOp2();
     }
-  }
-mobile2() */
+  } */
+ /*  document.querySelector(".burger").addEventListener("click", function() {
+    document.querySelector(".p1-header").style.opacity = 0.5;
+    document.querySelector(".p2-header").style.opacity = 0.5;
+    document.querySelector(".btn-header").style.opacity = 0.5;
+    document.querySelector(".p1-header").style.zIndex = -9999;
+    document.querySelector(".p2-header").style.zIndex = -9999;
+    document.querySelector(".btn-header").style.zIndex = -9999;
+  }); */
+
+  var isHidden = true;
+
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".p1-header").style.opacity = 1;
+    document.querySelector(".p2-header").style.opacity = 1;
+    document.querySelector(".btn-header").style.opacity = 1;
+    document.querySelector(".p1-header").style.zIndex = 0;
+    document.querySelector(".p2-header").style.zIndex = 0;
+    document.querySelector(".btn-header").style.zIndex = 0;
+    setTimeout(function() {
+      document.querySelector(".p1-header").style.opacity = 1;
+    document.querySelector(".p2-header").style.opacity = 1;
+    document.querySelector(".btn-header").style.opacity = 1;
+    document.querySelector(".p1-header").style.zIndex = 0;
+    document.querySelector(".p2-header").style.zIndex = 0;
+    document.querySelector(".btn-header").style.zIndex = 0;
+      isHidden = true;
+    }, 200);
+  });
+  
+  document.querySelector(".burger").addEventListener("click", function() {
+    if (isHidden) {
+      document.querySelector(".p1-header").style.opacity = 0.5;
+        document.querySelector(".p2-header").style.opacity = 0.5;
+        document.querySelector(".btn-header").style.opacity = 0.5;
+        document.querySelector(".p1-header").style.zIndex = -9999;
+        document.querySelector(".p2-header").style.zIndex = -9999;
+        document.querySelector(".btn-header").style.zIndex = -9999;
+      
+      isHidden = false;
+      setTimeout(function() {
+        document.querySelector(".p1-header").style.opacity = 1;
+      document.querySelector(".p2-header").style.opacity = 1;
+      document.querySelector(".btn-header").style.opacity = 1;
+      document.querySelector(".p1-header").style.zIndex = 0;
+      document.querySelector(".p2-header").style.zIndex = 0;
+      document.querySelector(".btn-header").style.zIndex = 0;
+        isHidden = true;
+      }, 3200);
+    }
+  });
