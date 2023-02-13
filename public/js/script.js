@@ -1,91 +1,3 @@
-const grayImage = document.querySelector('.img-box')
-const grayImage1 = document.querySelector('.img-box1')
-const grayImage2 = document.querySelector('.img-box2')
-const grayImage3 = document.querySelector('.img-box3')
-const grayImage4 = document.querySelector('.img-box4')
-const grayImage5 = document.querySelector('.img-box5')
-const grayImage6 = document.querySelector('.img-box6')
-const grayImage7 = document.querySelector('.img-box7')
-
-function colorgray(x) {
-  grayImage.style.filter= "grayscale(0)";
-  grayImage.style.transition= "0.5s";
-  setTimeout(() => {
-    grayImage.style.filter= "grayscale(1)";
-    }, 700);
-}
-function colorgray1(x) {
-  grayImage1.style.filter= "grayscale(0)";
-  grayImage1.style.transition= "0.5s";
-  setTimeout(() => {
-    grayImage1.style.filter= "grayscale(1)";
-    }, 700);
-}
-function colorgray2(x) {
-  grayImage2.style.filter= "grayscale(0)";
-  grayImage2.style.transition= "0.5s";
-  setTimeout(() => {
-    grayImage2.style.filter= "grayscale(1)";
-    }, 700);
-}
-function colorgray3(x) {
-  grayImage3.style.filter= "grayscale(0)";
-  grayImage3.style.transition= "0.5s";
-  setTimeout(() => {
-    grayImage3.style.filter= "grayscale(1)";
-    }, 700);
-}
-function colorgray4(x) {
-  grayImage4.style.filter= "grayscale(0)";
-  grayImage4.style.transition= "0.5s";
-  setTimeout(() => {
-    grayImage4.style.filter= "grayscale(1)";
-    }, 700);
-}
-function colorgray5(x) {
-  grayImage5.style.filter= "grayscale(0)";
-  grayImage5.style.transition= "0.5s";
-  setTimeout(() => {
-    grayImage5.style.filter= "grayscale(1)";
-    }, 700);
-}
-function colorgray6(x) {
-  grayImage6.style.filter= "grayscale(0)";
-  grayImage6.style.transition= "0.5s";
-  setTimeout(() => {
-    grayImage6.style.filter= "grayscale(1)";
-    }, 700);
-}
-function colorgray7(x) {
-  grayImage7.style.filter= "grayscale(0)";
-  grayImage7.style.transition= "0.5s";
-  setTimeout(() => {
-    grayImage7.style.filter= "grayscale(1)";
-    }, 700);
-}
-let filters = document.querySelector(".filters")
-const articles = document.querySelectorAll(".card");
-
-filters.addEventListener("click",(e)=>{
-  e.preventDefault();
-  if(e.target.classList.contains("filter-button")){
-    filters.querySelector(".active").classList.remove("active");
-    e.target.classList.add("active");
-    const filterValue = e.target.getAttribute("date-filter");
-    articles.forEach((item)=>{
-      if(item.classList.contains(filterValue) || filterValue == 'all'){
-        item.classList.remove("hide");
-        item.classList.add("show");
-      }
-      else{
-        item.classList.remove("show");
-        item.classList.add("hide");
-        console.log(filterValue)
-       /*  console.log(item.classList.contains(filterValue)) */
-      }
-    })
-  }
-})
 window.onscroll = function() {myFunction1()};
 let mobile =(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
 var header = document.querySelector(".nav");
@@ -148,46 +60,6 @@ function goup(x){
     );
   });
   }
-/* function mobile2() {
-    var navigatur = document.querySelector("#menu-toggle:checked + .nav");
-    if (mobile&& navigatur.style.display == "block" ) {
-      function mobileOp2() {
-        let p1_header = document.querySelector('.p1-header');
-        let p2_header = document.querySelector('.p2-header');
-        let btn_header = document.querySelector('.btn-header');
-        p1_header.style.zIndex= "-9999";
-        p2_header.style.zIndex= "-9999";
-        btn_header.style.zIndex= "-9999";
-        p1_header.style.opacity = "0.5";
-        p2_header.style.opacity = "0.5";
-        btn_header.style.opacity = "0.5";
-        setTimeout(() => {
-          p1_header.style.zIndex= "1";
-          p2_header.style.zIndex= "1";
-          btn_header.style.zIndex= "1";
-          p1_header.style.opacity = "1";
-          p2_header.style.opacity = "1";
-          btn_header.style.opacity = "1";
-          }, 2700);
-          let vid = document.querySelector('.video1 video');
-          vid.style.opacity = "0.5";
-          vid.style.zIndex= "-9999";
-          setTimeout(() => {
-            vid.style.zIndex= "1";
-            vid.style.opacity = "1";       
-            }, 2700);
-      }
-    }
-  } */
- /*  document.querySelector(".burger").addEventListener("click", function() {
-    document.querySelector(".p1-header").style.opacity = 0.5;
-    document.querySelector(".p2-header").style.opacity = 0.5;
-    document.querySelector(".btn-header").style.opacity = 0.5;
-    document.querySelector(".p1-header").style.zIndex = -9999;
-    document.querySelector(".p2-header").style.zIndex = -9999;
-    document.querySelector(".btn-header").style.zIndex = -9999;
-  }); */
-
   var isHidden = true;
 
   document.addEventListener("DOMContentLoaded", function() {
@@ -229,3 +101,193 @@ function goup(x){
       }, 3200);
     }
   });
+
+  let data_article = 
+  {
+    1:{
+	    "img": "blog1",
+      "Title": "China Trip",
+      "cat": "photography",
+      "article-info": [
+        {
+        "ul-user": "WALID",
+        "ul-calendar": "February 6st, 2023",
+        "ul-heart": "123",
+        }
+      ],
+	    "loream": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus mollitia qui suscipit iusto. Deserunt maiores modi architecto fugit error quae illum soluta natus quod temporibus alias, labore eum neque?"
+	  },
+
+ 	  2:{
+	    "img": "blog2",
+      "Title": "Asian Food",
+      "cat": "food",
+      "article-info": [
+        {
+          "ul-user": "WALID",
+          "ul-calendar": "February 6st, 2023",
+          "ul-heart": "123",
+        }
+      ],
+	    "loream": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus mollitia qui suscipit iusto. Deserunt maiores modi architecto fugit error quae illum soluta natus quod temporibus alias, labore eum neque?"
+	  },
+
+	  3:{
+	    "img": "blog3",
+      "Title": "Discover San Fransisco",
+      "cat": "nature",
+      "article-info": [
+        {
+          "ul-user": "WALID",
+          "ul-calendar": "February 6st, 2023",
+          "ul-heart": "123",
+        }
+      ],
+	    "loream": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus mollitia qui suscipit iusto. Deserunt maiores modi architecto fugit error quae illum soluta natus quod temporibus alias, labore eum neque?"
+	  },
+
+	  4:{
+	    "img": "blog4",
+      "Title": "Sports !",
+      "cat": "livestyle",
+      "article-info": [
+        {
+          "ul-user": "WALID",
+          "ul-calendar": "February 6st, 2023",
+          "ul-heart": "123",
+        }
+      ],
+	    "loream": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus mollitia qui suscipit iusto. Deserunt maiores modi architecto fugit error quae illum soluta natus quod temporibus alias, labore eum neque?"
+	  },
+
+	5:{
+	"img": "blog5",
+      "Title": "Girle in white",
+      "cat": "nature",
+      "article-info": [
+        {
+          "ul-user": "WALID",
+          "ul-calendar": "February 6st, 2023",
+          "ul-heart": "123",
+        }
+      ],
+	"loream": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus mollitia qui suscipit iusto. Deserunt maiores modi architecto fugit error quae illum soluta natus quod temporibus alias, labore eum neque?"
+	},
+	
+	6:{
+	"img": "blog6",
+      "Title": "Suchi",
+      "cat": "food",
+      "article-info": [
+        {
+          "ul-user": "WALID",
+          "ul-calendar": "February 6st, 2023",
+          "ul-heart": "123",
+        }
+      ],
+	"loream": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus mollitia qui suscipit iusto. Deserunt maiores modi architecto fugit error quae illum soluta natus quod temporibus alias, labore eum neque?"
+	},
+
+	7:{
+	"img": "blog7",
+      "Title": "Gta see",
+      "cat": "photography",
+      "article-info": [
+        {
+          "ul-user": "WALID",
+          "ul-calendar": "February 6st, 2023",
+          "ul-heart": "123",
+        }
+      ],
+	"loream": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus mollitia qui suscipit iusto. Deserunt maiores modi architecto fugit error quae illum soluta natus quod temporibus alias, labore eum neque?"
+	},
+
+	8:{
+	"img": "blog8",
+      "Title": "wood",
+      "cat": "nature",
+      "article-info": [
+        {
+          "ul-user": "WALID",
+          "ul-calendar": "February 6st, 2023",
+          "ul-heart": "123",
+        }
+      ],
+	"loream": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus mollitia qui suscipit iusto. Deserunt maiores modi architecto fugit error quae illum soluta natus quod temporibus alias, labore eum neque?"
+	},
+  
+}
+
+let content = document.getElementById('content');
+
+for (let i = 1; i <= Object.keys(data_article).length; i++) {
+  let data = data_article[i];
+  let card = document.createElement('div');
+  card.className = 'card' +' '+ data.cat;
+
+  let cardHeader = document.createElement('div');
+  cardHeader.className = 'card-header';
+  cardHeader.innerHTML = `
+  <img class="img-box" id="img-box-${i}" src="/public/image/${data.img}.jpg" alt="gallery${i}" onmouseover="gray(${i})">
+  <p class="p-card ${data.cat}">${data.cat}</p>
+  <p class="info-text">${data.Title}</p>
+`;
+
+  let articleInfo = document.createElement('div');
+  articleInfo.className = 'article-info';
+  articleInfo.innerHTML = `
+    <ul class="ul-user"><i class="fa-regular fa-user"></i>BY ${data["article-info"][0]["ul-user"]}</ul>
+    <ul class="ul-calendar"><i class="fa-regular fa-calendar"></i>${data["article-info"][0]["ul-calendar"]}</ul>
+    <ul class="ul-heart"><i class="fa-regular fa-heart"></i>${data["article-info"][0]["ul-heart"]}</ul>
+  `;
+
+  cardHeader.appendChild(articleInfo);
+  card.appendChild(cardHeader);
+
+  let cardText = document.createElement('div');
+  cardText.className = 'card-text' +' '+ data.cat;
+  cardText.innerHTML = `
+    <p class="loream-text">${data.loream}</p>
+    <a class="read-more" href="#"> Read More <i class="fa-solid fa-arrow-right"></i></a>
+  `;
+
+  card.appendChild(cardText);
+  content.appendChild(card);
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+let filters = document.querySelector(".filters")
+const articles = document.querySelectorAll(".card");
+
+filters.addEventListener("click",(e)=>{
+  e.preventDefault();
+  if(e.target.classList.contains("filter-button")){
+    filters.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
+    const filterValue = e.target.getAttribute("date-filter");
+    articles.forEach((item)=>{
+      if(item.classList.contains(filterValue) || filterValue == 'all'){
+        item.classList.remove("hide");
+        item.classList.add("show");
+      }
+      else{
+        item.classList.remove("show");
+        item.classList.add("hide");
+        console.log(filterValue)
+       /*  console.log(item.classList.contains(filterValue)) */
+      }
+    })
+  }
+})
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+const cards = document.querySelectorAll('.img-box');
+
+function gray(index) {
+  const card = document.getElementById(`img-box-${index}`);
+  card.style.filter = "grayscale(0)";
+  card.style.transition = "0.5s";
+  setTimeout(() => {
+    card.style.filter = "grayscale(1)";
+  }, 700);
+}

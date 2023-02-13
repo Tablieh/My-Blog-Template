@@ -116,6 +116,8 @@ header{
     object-fit: cover;
     width: 350px;
     height: 250px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 .img-box{
     cursor: zoom-in;
@@ -209,83 +211,17 @@ header{
     padding: 5px;
     border-radius: 5px;
 }
-.p1-card{
-    opacity: 0.9;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 10;
-    right: 10;
+.p-card.food{
     background-color: #126c84;
-    font-size: 12px;
-    padding: 5px;
-    border-radius: 5px;
 }
-.p2-card{
-    opacity: 0.9;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 10;
-    right: 10;
-    background-color: #1fa345;
-    font-size: 12px;
-    padding: 5px;
-    border-radius: 5px;
-}
-.p3-card{
-    opacity: 0.9;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 10;
-    right: 10;
-    background-color: rgba(184, 37, 69, 0.753);
-    font-size: 12px;
-    padding: 5px;
-    border-radius: 5px;
-}
-.p4-card{
-    opacity: 0.9;
-    opacity: 0.9;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 10;
-    right: 10;
-    background-color: #1fa345;
-    font-size: 12px;
-    padding: 5px;
-    border-radius: 5px;
-}
-.p5-card{
-    opacity: 0.9;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 10;
-    right: 10;
-    background-color: #126c84;
-    font-size: 12px;
-    padding: 5px;
-    border-radius: 5px;
-}
-.p6-card{
-    opacity: 0.9;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 10;
-    right: 10;
+.p-card.photography{
     background-color: #404040;
-    font-size: 12px;
-    padding: 5px;
-    border-radius: 5px;
 }
-.p7-card{
-    opacity: 0.9;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 10;
-    right: 10;
+.p-card.nature{
     background-color: #1fa345;
-    font-size: 12px;
-    padding: 5px;
-    border-radius: 5px;
+}
+.p-card.livestyle{
+    background-color: rgba(184, 37, 69, 0.753);
 }
 .ALL-color{
     background-color: #292929;
